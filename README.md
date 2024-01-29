@@ -44,6 +44,7 @@ To formally verify this, I ran a partial F-test comparing the full model to a re
 <caption align="bottom">Table B</caption>
 
 |Beta|Term|Coeff|t|p-val|
+|---|---|---|---|---|
 |0|Intercept|19.3730|769.249|0.000|
 |1|$x_1$|1.0054|39.920|0.000|
 |2|$x_2$|-2.8447|-112.954|0.000|
