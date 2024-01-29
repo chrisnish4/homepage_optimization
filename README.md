@@ -22,5 +22,4 @@ In this report, we will look more closely at the experimental journey, including
 
 ### III. Experiments 
 #### <ins>Feature Screening</ins>
-Problem/Design
 The initial step was to reduce the search space by using a $2^4$ factorial design, as it is a low cost way to determine which factors are significant in impacting average browsing time. The experimental conditions of the $2^4$ factorial experiment are shown in Table A. 
