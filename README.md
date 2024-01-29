@@ -36,3 +36,7 @@ The initial step was to reduce the search space by using a $2^4$ factorial desig
 |Preview type|AC|TT|
 |Tile size|0.1|0.5|
 
+<ins>Analysis</ins>
+From the results of the linear model as seen in Table B, the main effects of Prev.Length, Match.Score, and Prev.Type were significant at a 1% significance level as well as the interaction between Prev.Length and Match.Score. 
+
+To formally verify this, I ran a partial F-test comparing the full model to a reduced model that only included terms deemed significant by the full model. With a test statistic $t=0.5211$ and p-value of $0.8903$, we fail to reject the null (at a 1% significance level). Subsequently, I operated under the null hypothesis: $\beta_j=0$ where  $j\in\{3, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15\}$
