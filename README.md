@@ -1,11 +1,11 @@
 # homepage_optimization
-###I. Summary
+### I. Summary
 In this series of experiments, the goal was to optimize the Netflix homepage in order to minimize a user’s average browsing time. In this Netflix-inspired project, the factors I was able to manipulate and their ranges were Tile.Size (as proportion of page height) [0.1,0.5], Match.Score [0,100], Prev.Length (preview length in seconds) [30,120], and Prev.Type (preview type) {Teaser/Trailer (TT), Actual Content (AC)}. I conducted a series of experiments, a 2k factorial experiment followed by two central composite designs and a ‘radial’ search, in order to reduce the search space and to estimate the experimental condition that minimizes the metric of interest (Average Browse Time in minutes). The value and location of the predicted optimum are: 
 |Preview length|Match score|Preview type|Tile size| Avg. browsing time|
 |---|---|---|---|---|
 |75|75|TT|0.2|10.0831|
 
-### Introduction 
+### II. Introduction 
 #### <ins>Problem statement</ins>
 In this scenario, Netflix is experimenting with altering 4 features of their “Top Picks for …” row on their desktop homepage with the goal of reducing the amount of time users spend choosing what to watch. By streamlining the browsing experience, the idea is to increase user engagement by reducing decision paralysis and fatigue. As users get frustrated by the number of choices, they may leave the site.
 
@@ -19,3 +19,8 @@ To more rigorously search for the optimum within the search space, I conducted a
 The calculated stationary point fell outside of any previously observed conditions, and so I conducted a second CCD experiment centered around the first stationary point. With this, I was able to define the final search area, where I collected data on conditions ‘radial’ to the second stationary point. 
 
 In this report, we will look more closely at the experimental journey, including the experimental designs, specific conditions, and analyses that led to the findings about the optimal conditions to minimize browsing time.
+
+### III. Experiments 
+#### <ins>Feature Screening</ins>
+Problem/Design
+The initial step was to reduce the search space by using a 24 factorial design, as it is a low cost way to determine which factors are significant in impacting average browsing time. The experimental conditions of the 24 factorial experiment are shown in Table A. 
