@@ -30,4 +30,4 @@ The initial step was to reduce the search space by using a $2^4$ factorial desig
 |Match score|20%|80%|
 |Preview type|AC|TT|
 |Tile size|0.1|0.5|
-: Table A
+[Table A]
